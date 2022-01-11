@@ -1,3 +1,9 @@
+/* eslint-disable import/no-commonjs */
+
+const path = require('path')
+
+const resolvePath = relativePath => path.resolve(__dirname, relativePath)
+
 const config = {
   projectName: 'funkey',
   date: '2022-1-11',
@@ -11,6 +17,10 @@ const config = {
   outputRoot: `dist/${process.env.TARO_ENV}`,
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@/static': resolvePath('../src/static'),
+    '@/actions': resolvePath('../src/actions'),
   },
   copy: {
     patterns: [
@@ -58,7 +68,8 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    }
+    },
+    esnextModules: ['taro-ui']
   }
 }
 
