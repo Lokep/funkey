@@ -14,12 +14,12 @@
 
 ## 项目 规划
 
-* [ ] lift progress
+* [ ] life progress
 * [ ] what happens today
 * [ ] chicken soup
 * [ ] random meal
 * [ ] avatar maker
-* [ ] emoji maker 
+* [ ] emoji maker
 * [ ] iLED
 * [ ] 文案制造机
 * [ ] 亲戚关系计算器

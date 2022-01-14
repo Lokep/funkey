@@ -31,9 +31,10 @@ export default {
   },
   subPackages: [
     {
-      "root": "pages/life-progress",
+      "root": "pages/tools",
       "pages": [
-        "count-down/index"
+        "life-progress/count-down/index",
+        ""
       ]
     }
   ]
